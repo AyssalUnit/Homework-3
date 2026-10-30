@@ -1,16 +1,49 @@
-# React + Vite
+# CPSC 349 Homework 3 – Movie Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+Movie Explorer is a React web application that allows users to browse, search, and sort movies using The Movie Database (TMDB) API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The application displays movie posters, titles, release dates, and average ratings.
 
-## React Compiler
+## How to Run Locally
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**1. Clone the repository**
 
-## Expanding the ESLint configuration
+```bash
+git clone https://github.com/YOUR_USERNAME/Homework-3.git
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**2. Open the project folder**
+
+```bash
+cd Homework-3
+```
+
+**3. Install dependencies**
+
+```bash
+npm install
+```
+
+**4. Set up the API key**
+
+Create a `.env` file in the project root and add:
+
+```env
+VITE_TMDB_API_KEY= YOUR_TMDB_API_KEY
+```
+
+Replace the placeholder with a valid TMDB API key.
+
+**5. Start the application**
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in the terminal, usually `http://localhost:5173/`.
+
+## API
+
+Movie data is provided by [The Movie Database (TMDB)](https://www.themoviedb.org/).
