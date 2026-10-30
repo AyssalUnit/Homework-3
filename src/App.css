@@ -1,0 +1,154 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #263746;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #2d4055;
+    padding: 15px;
+}
+
+#search {
+    padding: 8px;
+    width: 180px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+#sortButton {
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdownContent {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 160px;
+    border: 1px solid gray;
+    z-index: 1;
+}
+
+.dropdownContent div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdownContent div:hover {
+    background-color: lightgray;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    padding: 15px;
+}
+
+.movie-card {
+    min-width: 0;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.movie-card img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+.movie-card h2 {
+    font-size: 16px;
+}
+
+.movie-card p {
+    font-size: 12px;
+}
+
+.no-poster {
+    height: 250px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.status {
+    text-align: center;
+    margin: 15px;
+}
+
+.status:empty {
+    display: none;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.pagination button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #217dbb;
+}
+
+.pagination button:disabled {
+    background-color: #217dbb;
+    cursor: not-allowed;
+}
+
+@media (max-width: 850px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 350px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
